@@ -1,0 +1,13 @@
+export GTK_IM_MODULE=gcin
+export QT_IM_MODULE=gcin
+export XMODIFIERS="@im=gcin"
+
+gcin_exist=`ps -ef | grep -v grep | grep gcin`
+if [ "x" = "x$gcin_exist" ]; then
+  exec /usr/bin/gcin &
+fi
+
+rofi_exist=`ps -ef | grep -v grep | grep rofi`
+if [ "x" = "x$rofi_exist" ]; then
+  exec rofi -key-run F12 &
+fi
