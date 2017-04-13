@@ -7,7 +7,8 @@ if [ "x" = "x$gcin_exist" ]; then
   exec /usr/bin/gcin &
 fi
 
-rofi_exist=`ps -ef | grep -v grep | grep rofi`
-if [ "x" = "x$rofi_exist" ]; then
-  exec rofi -key-run F12 &
-fi
+# TODO: change F12 to other key
+#rofi_exist=`ps -ef | grep -v grep | grep rofi`
+#if [ "x" = "x$rofi_exist" ]; then
+#  exec rofi -key-run F12 &
+#fi
