@@ -1,0 +1,2 @@
+export JAVA_HOME=$HOME/java
+export SCALA_HOME=$HOME/scala
